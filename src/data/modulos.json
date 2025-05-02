@@ -1,0 +1,70 @@
+[ 
+    {
+        "id": "intro",
+        "title": "¿Qué es un invernadero?",
+        "videoUrl": "https://www.youtube.com/embed/dGRujP85_5o?modestbranding=1&rel=0&autoplay=1&mute=1&vq=hd1080",
+        "description": "Comprende el propósito y los beneficios de un invernadero.",
+        "steps": [
+            "Definición de invernadero: qué es y para qué sirve.",
+            "Cómo funciona un invernadero y qué condiciones crea para las plantas.",
+            "Materiales comunes usados en su construcción: policarbonato, vidrio, plástico.",
+            "Ventajas del invernadero: protección climática, control de plagas, prolongación de cosechas.",
+            "Usos del invernadero: producción comercial, uso doméstico y educativo.",
+            "Comparación entre invernaderos caseros y profesionales."
+        ]
+    },
+    {
+        "id": "tipos",
+        "title": "Tipos de invernaderos",
+        "videoUrl": "https://www.youtube.com/embed/pYs0mpzPBuI?modestbranding=1&rel=0&autoplay=1&mute=1&vq=hd1080",
+        "description": "Conoce los distintos tipos de invernaderos que puedes construir.",
+        "steps": [
+            "Introducción a los diferentes tipos de invernaderos y su importancia en la agricultura.",
+            "Descripción del invernadero tipo túnel: estructura, materiales y ventajas.",
+            "Análisis del invernadero tipo capilla: características y usos comunes.",
+            "Comparación entre los distintos tipos de invernaderos y sus aplicaciones.",
+            "Consejos para elegir el tipo de invernadero adecuado según las necesidades del cultivo."
+        ]
+    },
+    {
+        "id": "germinacion-transplante",
+        "title": "Germinación y trasplante",
+        "videoUrl": "https://www.youtube.com/embed/LOL519VZHCY?modestbranding=1&rel=0&autoplay=1&mute=1&vq=hd1080",
+        "description": "Aprende a germinar tus plantas y prepararlas para el trasplante en un invernadero.",
+        "steps": [
+            "Preparación del espacio adecuado para germinar las semillas.",
+            "Cómo crear un invernadero pequeño para la germinación utilizando botellas recicladas.",
+            "Control de temperatura y humedad para asegurar una buena germinación.",
+            "Trasplante de las plantas al espacio adecuado cuando han alcanzado el tamaño necesario.",
+            "Cuidados necesarios después del trasplante para asegurar un crecimiento saludable."
+        ]
+    },
+    {
+        "id": "siembra-directa",
+        "title": "Siembra directa en el invernadero",
+        "videoUrl": "https://www.youtube.com/embed/Nca48nc_IUM?modestbranding=1&rel=0&autoplay=1&mute=1&vq=hd1080",
+        "description": "Conoce cómo sembrar directamente en el invernadero sin necesidad de trasplante.",
+        "steps": [
+            "Preparación del suelo dentro del invernadero con materia orgánica.",
+            "Diseño de camas de cultivo con buena separación.",
+            "Siembra directa de semillas en hileras o al voleo según el cultivo.",
+            "Cubierta ligera para conservar humedad inicial.",
+            "Riegos regulares y cuidados básicos desde el inicio del crecimiento."
+        ]
+    },
+    {
+        "id": "cuidados",
+        "title": "Cuidados y mantenimiento",
+        "videoUrl": "https://www.youtube.com/embed/4Ed1VR39JIk?modestbranding=1&rel=0&autoplay=1&mute=1&vq=hd1080",
+        "description": "Aprende cómo cuidar y mantener tu invernadero en buenas condiciones.",
+        "steps": [
+            "Limpieza periódica: Elimina restos de plantas, suciedad y musgo para evitar la propagación de enfermedades.",
+            "Control de temperatura: Mantén una temperatura constante entre 10 y 30 grados Celsius para un crecimiento óptimo.",
+            "Ventilación adecuada: Asegura una buena circulación de aire para prevenir la humedad excesiva y la aparición de plagas.",
+            "Riego eficiente: Ajusta el riego según las necesidades de las plantas y las condiciones climáticas.",
+            "Inspección regular de estructuras: Revisa y repara posibles daños en la estructura del invernadero para mantener su integridad",
+            "Monitoreo de plagas y enfermedades: Realiza inspecciones frecuentes para detectar y controlar posibles infestaciones."
+          ]
+    }
+]
+  

@@ -1,0 +1,78 @@
+---
+// src/pages/curso.astro
+import Layout from "../layouts/Layout.astro";
+import modulos from "../data/modulos.json";
+---
+
+<Layout title="Raíz Verde - Curso">
+    <header class="w-full flex justify-between items-center p-6 bg-green-900 shadow-md lg:px-40">
+        <div class="flex items-center space-x-4">
+            <a href="/">
+                <img src="/public/Icon-raiz-verde.png" alt="Raíz Verde Logo" class="h-10 w-10 object-contain rounded" />
+            </a>
+            <a href="/">
+                <span class="lg:text-3xl md:text-3xl text-2xl font-bold text-white">Raíz Verde</span>
+            </a>
+        </div>
+        <a href="/plantaciones" class="bg-green-50 text-green-900 font-semibold py-2 px-5 rounded hover:bg-green-100 transition">
+          Plantaciones
+        </a>
+    </header>
+
+    <main class="p-6 max-w-5xl mx-auto">
+        <div class="space-y-4">
+        {modulos.map((modulo, index) => (
+            <details id={modulo.id} class="mb-4 border rounded-md p-4 bg-green-100" {...(index === 0 ? { open: true } : {})}>
+            <summary class="cursor-pointer text-lg font-semibold">
+                {modulo.title}
+            </summary>
+            <div class="w-full aspect-video mt-3 space-y-2">
+                <iframe
+                    class="w-full h-full rounded-t-lg shadow-lg"
+                    src={modulo.videoUrl} // ?modestbranding=1&rel=0&autoplay=1&mute=1
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    loading="lazy"
+                ></iframe>
+                <p class="quality-notice mb-5 pl-5 text-gray-600">Recomendado: Selecciona la calidad más alta en la configuración del reproductor (ícono de engranaje).</p>
+                <div class="bg-white p-5 rounded-b-lg shadow-lg">
+                    <span class="font-bold text-lg">{modulo.description}</span>
+                    <ul class="mt-5 list-disc list-inside space-y-1 text-gray-800">
+                        {modulo.steps.map((step) => (
+                            <li>{step}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+            </details>
+        ))}
+        </div>
+    </main>
+</Layout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const allDetails = document.querySelectorAll("details");
+
+        // Manejar la expansión y colapso al hacer clic en los detalles
+        document.querySelectorAll("details").forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) {
+            allDetails.forEach((el) => {
+                if (el !== detail) el.removeAttribute("open");
+            });
+            }
+        });
+        });
+
+        // Controlar el scroll al cargar la página con hash en la URL
+        const hash = location.hash?.replace('#', '');
+        if (hash) {
+        const el = document.getElementById(hash);
+        if (el?.tagName === "DETAILS") {
+            el.setAttribute("open", "true");
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    });
+</script>

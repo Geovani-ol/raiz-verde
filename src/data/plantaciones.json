@@ -1,0 +1,191 @@
+[
+    {
+
+        "id": "lechuga",
+        "title": "Lechuga",
+        "videoUrl": "https://www.youtube.com/embed/H1TvXfwtI3U?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Aprende paso a paso cómo sembrar, cuidar y cosechar lechugas en un invernadero de manera eficiente y económica.",
+        "steps": [
+            "Preparar un semillero con tierra negra mezclada con composta.",
+            "Sembrar las semillas de lechuga de forma superficial y espaciada.",
+            "Cubrir ligeramente con tierra y mantener el sustrato húmedo.",
+            "Esperar entre 7 a 10 días para la germinación.",
+            "Trasplantar las plántulas al invernadero cuando alcancen unos 10 cm.",
+            "Hacer surcos en la tierra del invernadero y colocar las plantas con espacio adecuado.",
+            "Regar moderadamente todos los días por la mañana.",
+            "Proteger las plantas del exceso de calor o frío según el clima.",
+            "Cosechar cuando la lechuga haya formado una cabeza firme o esté lista para consumo."
+        ]
+    },
+    {
+        "id": "espinaca",
+        "title": "Espinaca",
+        "videoUrl": "https://www.youtube.com/embed/8FLKQa2qTeQ?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Guía completa sobre cómo plantar espinacas en maceta, desde la germinación hasta la recolección y extracción de semillas para futuras siembras.",
+        "steps": [
+            "Germinar las semillas de espinaca en un semillero con tierra ligera y bien aireada.",
+            "Trasplantar las plántulas a una maceta con buen drenaje y exposición al sol.",
+            "Regar moderadamente, evitando el encharcamiento, y mantener el sustrato húmedo.",
+            "Fertilizar con abonos orgánicos cada 2 semanas para promover el crecimiento.",
+            "Cosechar las hojas exteriores cuando tengan un tamaño adecuado, permitiendo que las interiores sigan creciendo.",
+            "Dejar que la planta florezca para producir semillas para la próxima temporada.",
+            "Recolectar las semillas una vez que las flores se hayan secado y caído."
+        ]
+    },
+    {
+        "id": "brocoli",
+        "title": "Brócoli",
+        "videoUrl": "https://www.youtube.com/embed/HHf73xiGhcc?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Este tutorial enseña a germinar brócoli sin semillas usando el tallo principal, mostrando el proceso desde la preparación hasta el trasplante en tierra.",
+        "steps": [
+            "Cortar el tallo principal del brócoli, retirando las inflorescencias sobrantes.",
+            "Colocar el tallo en un recipiente con papel húmedo y agua para mantener la humedad.",
+            "Ubicar el recipiente en un lugar con buena iluminación indirecta.",
+            "Esperar aproximadamente 7 días hasta que el tallo desarrolle raíces visibles.",
+            "Trasplantar el tallo germinado en tierra húmeda con buen drenaje.",
+            "Cuidar la planta con riego moderado y exposición solar parcial.",
+            "Esperar el crecimiento de la nueva planta de brócoli hasta obtener una nueva cosecha."
+        ]
+    },
+    {
+        "id": "jitomate",
+        "title": "Jitomate",
+        "videoUrl": "https://www.youtube.com/embed/zORaSBRzfSk?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Aprende a cultivar tomates en espacios reducidos, desde la obtención de semillas hasta la cosecha, con recomendaciones para un crecimiento saludable y productivo.",
+        "steps": [
+          "Obtener semillas a partir de un tomate maduro.",
+          "Germinar las semillas en un recipiente pequeño con tierra húmeda.",
+          "Trasplantar las plántulas a macetas más grandes cuando alcancen unos 10-15 cm de altura.",
+          "Colocar las macetas en un lugar con buena exposición solar.",
+          "Retirar los brotes axilares para concentrar la energía en la producción de frutos.",
+          "Utilizar soportes o tutores para mantener la planta erguida y evitar que los tomates toquen el suelo.",
+          "Mantener el riego constante, evitando encharcamientos.",
+          "Comenzar la cosecha aproximadamente a los tres meses y continuar recolectando durante varias semanas."
+        ]
+    },
+    {
+        "id": "chile_habanero",
+        "title": "Chile habanero",
+        "videoUrl": "https://www.youtube.com/embed/j1oWOSa-YwQ?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Guía completa sobre cómo cultivar chiles habaneros en casa, con cuatro métodos de germinación, cuidados para las plántulas, trasplante y recomendaciones para una cosecha abundante.",
+        "steps": [
+          "Elegir uno de los cuatro métodos de germinación: recipientes plásticos, semilleros, siembra directa o papel húmedo.",
+          "Colocar las semillas en el medio elegido y mantener la humedad constante.",
+          "Esperar entre 7 a 14 días para la germinación, según las condiciones.",
+          "Trasplantar las plántulas a macetas más grandes cuando desarrollen al menos 4 hojas verdaderas.",
+          "Colocar las plantas en un lugar con buena luz solar directa (mínimo 6 horas al día).",
+          "Regar con moderación, manteniendo el sustrato húmedo pero no encharcado.",
+          "Aplicar abono o fertilizante orgánico cada 2-3 semanas para promover el crecimiento.",
+          "Esperar la maduración de los frutos y cosechar cuando estén completamente desarrollados.",
+          "Tener en cuenta que el ciclo de vida del chile habanero es anual, y se puede obtener una o dos cosechas al año."
+        ]
+    },
+    {
+        "id": "chile_jalapeno",
+        "title": "Chile jalapeño",
+        "videoUrl": "https://www.youtube.com/embed/u2MIJrt2uXc?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Esta guía presenta dos métodos para germinar semillas de chile jalapeño, incluyendo extracción, trasplante, cuidados generales y comparación de resultados.",
+        "steps": [
+          "Extraer las semillas de chiles jalapeños maduros comprados en el supermercado.",
+          "Primer método: colocar las semillas en un recipiente con toallas de papel húmedas, manteniendo la humedad constante.",
+          "Segundo método: sembrar las semillas en un semillero con sistema de autorriego.",
+          "Esperar la germinación, que puede tomar entre 7 a 14 días según el método.",
+          "Trasplantar las plántulas a macetas con sustrato suelto, rico en materia orgánica.",
+          "Colocar las macetas en un lugar con buena iluminación solar (mínimo 6 horas al día).",
+          "Regar regularmente sin encharcar el sustrato.",
+          "Aplicar fertilizante orgánico o compost cada dos semanas.",
+          "Monitorear y controlar plagas comunes como pulgones o araña roja.",
+          "Comparar resultados: el semillero con autorriego es más eficiente y requiere menos atención."
+        ]
+    },
+    {
+        "id": "cilantro",
+        "title": "Cilantro",
+        "videoUrl": "https://www.youtube.com/embed/GaWPucD0Je4?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Método efectivo para propagar cilantro reutilizando raíces de plantas compradas, ideal para mantener un suministro constante en casa.",
+        "steps": [
+          "Cortar los tallos del cilantro comprado, dejando solo la raíz y aproximadamente una pulgada de tallo, o solo la raíz.",
+          "Preparar un recipiente con sustrato orgánico bien aireado.",
+          "Plantar las raíces en el sustrato, cubriéndolas levemente.",
+          "Regar abundantemente y mantener el sustrato húmedo (no encharcado).",
+          "Colocar las plantas en un lugar sombreado durante los primeros días.",
+          "Observar nuevos brotes antes de mover las plantas a un lugar con pleno sol.",
+          "Después de aproximadamente 18 días, notar que las raíces sin hojas grandes desarrollan mejor crecimiento.",
+          "Continuar con riegos regulares y cosechar el cilantro a medida que crece."
+        ]
+    },
+    {
+        "id": "papa",
+        "title": "Papa",
+        "videoUrl": "https://www.youtube.com/embed/8R4BiRe5Y3w?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Método sencillo para cultivar papas en maceta, desde la preparación de la semilla hasta la cosecha, con cuidados mínimos y recomendaciones útiles.",
+        "steps": [
+          "Elegir la temporada adecuada para sembrar según el clima de la región.",
+          "Seleccionar papas con brotes o cortar una papa en trozos con brotes visibles.",
+          "Escoger una maceta grande (mínimo 40 cm de profundidad) con buen drenaje.",
+          "Preparar un sustrato suelto mezclado con compost o materia orgánica.",
+          "Plantar las papas a unos 10 cm de profundidad con los brotes hacia arriba.",
+          "Cubrir con tierra y mantener húmedo el sustrato sin encharcar.",
+          "Añadir tierra gradualmente a medida que la planta crece, cubriendo parte del tallo.",
+          "Colocar la maceta en un lugar soleado (mínimo 6 horas diarias de luz).",
+          "Regar regularmente evitando el exceso de agua.",
+          "Esperar a que la planta se marchite naturalmente como señal de que se puede cosechar.",
+          "Cosechar las papas cuidadosamente y almacenar en lugar fresco y seco."
+        ]
+    },
+    {
+        "id": "zanahoria",
+        "title": "Zanahorias",
+        "videoUrl": "https://www.youtube.com/embed/uOM845b6psQ?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Guía práctica para hacer rebrotar la parte superior de una zanahoria, obtener flores y semillas, y así iniciar un nuevo cultivo.",
+        "steps": [
+          "Cortar la parte superior de una zanahoria dejando unos 2-3 cm desde la corona.",
+          "Colocar la pieza en un recipiente plano con poca agua, con la parte cortada hacia abajo.",
+          "Ubicar el recipiente en un lugar iluminado, pero sin sol directo.",
+          "Cambiar el agua cada dos días para evitar hongos o podredumbre.",
+          "Esperar algunos días hasta que aparezcan brotes y raíces.",
+          "Preparar tierra suelta y con buen drenaje en una maceta o recipiente (como una botella plástica).",
+          "Trasplantar la zanahoria rebrotada al sustrato, cubriendo bien las raíces.",
+          "Regar suavemente después del trasplante y mantener la tierra húmeda.",
+          "Con el tiempo, la planta desarrollará flores y posteriormente semillas.",
+          "Recolectar las semillas secas para futuras siembras, ya que no se obtendrá otra zanahoria completa desde este rebrote."
+        ]
+    },
+    {
+        "id": "cebolla",
+        "title": "Cebolla",
+        "videoUrl": "https://www.youtube.com/embed/iGPcPihXNMI?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Paso a paso para cultivar cebollas en maceta usando la base de una cebolla de cocina, sin necesidad de semillas.",
+        "steps": [
+          "Cortar la base de una cebolla dejando aproximadamente 2 a 3 cm desde la raíz.",
+          "Evitar poner la base en agua; se recomienda sembrarla directamente en tierra.",
+          "Colocar la base en una maceta con sustrato suelto y con buen drenaje, cubriéndola ligeramente con tierra.",
+          "Mantener la tierra húmeda y ubicar la maceta en un lugar con buena luz solar.",
+          "Esperar a que broten nuevos tallos; de una sola base pueden salir varias plantas.",
+          "Cuando los brotes alcancen unos 10-15 cm, separar con cuidado cada uno y trasplantarlos a nuevas macetas o al huerto.",
+          "Continuar el riego regular y mantener el sustrato húmedo pero sin encharcar.",
+          "Proteger las plantas de plagas como gusanos cortadores, revisando el sustrato y aplicando medidas preventivas.",
+          "Después de aproximadamente tres meses y medio, cosechar cuando el follaje comience a secarse y doblarse.",
+          "Dejar secar las cebollas al sol antes de almacenarlas."
+        ]
+    },
+    {
+        "id": "ajo",
+        "title": "Ajo",
+        "videoUrl": "https://www.youtube.com/embed/fiuI-NlOQTA?modestbranding=1&rel=0&autoplay=1&mute=1",
+        "description": "Guía práctica para cultivar ajo en macetas utilizando dientes de ajo, con recomendaciones sobre preparación, siembra, cuidados y cosecha.",
+        "steps": [
+          "Seleccionar dientes de ajo sanos, grandes y firmes (preferentemente variedad criolla).",
+          "Preparar una maceta profunda con tierra suelta, rica en materia orgánica y buen drenaje.",
+          "Plantar cada diente con la punta hacia arriba, enterrándolo a una profundidad de 3 a 5 cm y dejando espacio entre ellos.",
+          "Regar ligeramente después de la siembra y mantener el sustrato húmedo durante las primeras semanas.",
+          "Colocar la maceta en un lugar con buena exposición solar, al menos 6 horas diarias.",
+          "Eliminar malas hierbas que puedan competir por nutrientes y luz.",
+          "Esperar la aparición de brotes, lo cual puede tardar unas semanas.",
+          "Continuar con riegos moderados, evitando el encharcamiento.",
+          "Saber cuándo cosechar: cuando las hojas se sequen y doblen de forma natural.",
+          "Extraer los ajos, sacudir la tierra y dejar secar en un lugar ventilado antes de almacenarlos."
+        ]
+    }
+]
+  
