@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import videos from "../data/plantaciones.json";
 ---
 
-<Layout title="Cultivos Específicos">
+<Layout title="Cultivos Específicos - Raíz Verde">
     <header class="w-full flex justify-between items-center p-6 bg-green-900 shadow-md lg:px-40">
         <div class="flex items-center space-x-4">
             <a href="/">
@@ -13,9 +13,14 @@ import videos from "../data/plantaciones.json";
                 <span class="lg:text-3xl md:text-3xl text-2xl font-bold text-white">Raíz Verde</span>
             </a>
         </div>
-        <a href="/curso" class="bg-green-50 text-green-900 font-semibold py-2 px-5 rounded hover:bg-green-100 transition">
-          Curso
-        </a>
+        <div class="flex items-center space-x-8">
+            <a href="/comprar" class="text-white font-bold hover:underline transition">
+                Comprar
+            </a>
+            <a href="/curso" class="bg-green-50 text-green-900 font-semibold py-2 px-5 rounded hover:bg-green-100 transition">
+                Curso
+            </a>
+        </div>
     </header>
 
     <main class="p-6 max-w-4xl mx-auto">

@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+const paginas=[
+    {
+        title: "Semillas",
+        description: "Encuentra semillas de calidad para tus cultivos: lechuga, espinaca, brócoli y más.",
+        link: "https://www.semillascasacobo.com/"
+    },
+    {
+        title: "Productos Frescos",
+        description: "Compra verduras recién cosechadas directamente de productores confiables.",
+        link: "https://www.elbuencampo.com/"
+    },
+    {
+        title: "Productos Congelados",
+        description: "Verduras congeladas listas para usar, sin perder sus propiedades.",
+        link: "https://home.lahuerta.com.mx/"
+    },
+    {
+        title: "Herramientas para Invernaderos",
+        description: "Todo lo necesario para equipar y mantener tu invernadero: estructuras, plásticos, riego, etc.",
+        link: "https://www.sistemashorticolasalmeria.com/"
+    }
+]
+---
+
+<Layout title="Comprar - Raíz Verde">
+    <header class="w-full flex justify-between items-center p-6 bg-green-900 shadow-md lg:px-40">
+        <div class="flex items-center space-x-4">
+            <a href="/">
+                <img src="/assets/Icon-raiz-verde.png" alt="Raíz Verde Logo" class="h-10 w-10 object-contain rounded" />
+            </a>
+            <a href="/">
+                <span class="lg:text-3xl md:text-3xl text-2xl font-bold text-white">Raíz Verde</span>
+            </a>
+        </div>
+        <div class="flex items-center space-x-8">
+            <a href="/plantaciones" class="text-white font-bold hover:underline transition">
+                Plantaciones
+            </a>
+            <a href="/curso" class="bg-green-50 text-green-900 font-semibold py-2 px-5 rounded hover:bg-green-100 transition">
+              Curso
+            </a>
+        </div>
+    </header>
+
+
+    <main class="p-6 max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-green-800 mt-6 mb-15 text-center">Dónde Comprar</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {paginas.map(pagina => (
+                <a href={pagina.link} target="_blank" class="block bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition">
+                    <h2 class="text-xl font-semibold text-green-700">{pagina.title}</h2>
+                    <p class="mt-2">{pagina.description}</p>
+                </a>
+            ))}
+        </div>
+    </main>    
+</Layout>
+
