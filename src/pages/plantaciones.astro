@@ -1,27 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import videos from "../data/plantaciones.json";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Cultivos Específicos - Raíz Verde">
-    <header class="w-full flex justify-between items-center p-6 bg-green-900 shadow-md lg:px-40">
-        <div class="flex items-center space-x-4">
-            <a href="/">
-                <img src="/assets/Icon-raiz-verde.png" alt="Raíz Verde Logo" class="h-10 w-10 object-contain rounded" />
-            </a>
-            <a href="/">
-                <span class="lg:text-3xl md:text-3xl text-2xl font-bold text-white">Raíz Verde</span>
-            </a>
-        </div>
-        <div class="flex items-center space-x-8">
-            <a href="/comprar" class="text-white font-bold hover:underline transition">
-                Comprar
-            </a>
-            <a href="/curso" class="bg-green-50 text-green-900 font-semibold py-2 px-5 rounded hover:bg-green-100 transition sm:hidden md:block lg:block">
-                Curso
-            </a>
-        </div>
-    </header>
+    <Header />
 
     <main class="p-6 max-w-4xl mx-auto">
         <h1 class="text-3xl font-bold text-green-800 mb-6 text-center">Cultivos Específicos</h1>
