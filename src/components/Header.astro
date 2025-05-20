@@ -1,7 +1,7 @@
 ---
 // src/components/Header.astro
 const { pathname } = Astro.url;
-const isActive = (href: string) => pathname === href;
+const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 ---
 
 <header class="w-full bg-green-900 shadow-md px-6 py-4 lg:px-40 relative">
