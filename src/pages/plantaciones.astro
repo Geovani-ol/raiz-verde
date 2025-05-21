@@ -8,11 +8,11 @@ import Header from "../components/Header.astro";
     <Header />
 
     <main class="p-6 max-w-4xl mx-auto">
-        <h1 class="text-3xl font-bold text-green-800 mb-6 text-center">Cultivos Específicos</h1>
+        <h1 class="text-3xl font-bold text-green-800 mb-10 mt-2 text-center">Cultivos Específicos</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {videos.map((video, index) => (
                 <div
-                class="cursor-pointer bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 p-4 border border-green-200 transition"
+                class="cursor-pointer bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 p-4 border border-gray-200 transition"
                 data-index={index}
                 >
                     <h2 class="text-xl font-semibold text-green-700">{video.title}</h2>

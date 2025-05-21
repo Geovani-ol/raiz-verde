@@ -11,8 +11,8 @@ import Header from "../components/Header.astro";
     <main class="p-6 max-w-5xl mx-auto">
         <div class="space-y-4">
         {modulos.map((modulo, index) => (
-            <details id={modulo.id} class="mb-4 border rounded-md p-4 bg-green-100" {...(index === 0 ? { open: true } : {})}>
-            <summary class="cursor-pointer text-lg font-semibold">
+            <details id={modulo.id} class="mb-4 border rounded-md p-4 bg-[#336633]" {...(index === 0 ? { open: true } : {})}>
+            <summary class="cursor-pointer text-lg font-semibold text-white">
                 {modulo.title}
             </summary>
             <div class="w-full aspect-video mt-3 space-y-2">
@@ -23,7 +23,7 @@ import Header from "../components/Header.astro";
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     loading="lazy"
                 ></iframe>
-                <p class="quality-notice mb-5 pl-5 text-gray-600">Recomendado: Selecciona la calidad más alta en la configuración del reproductor (ícono de engranaje).</p>
+                <p class="quality-notice mb-5 pl-5 text-gray-100">Recomendado: Selecciona la calidad más alta en la configuración del reproductor (ícono de engranaje).</p>
                 <div class="bg-white p-5 rounded-b-lg shadow-lg">
                     <span class="font-bold text-lg">{modulo.description}</span>
                     <ul class="mt-5 list-disc list-inside space-y-1 text-gray-800">

@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Comentarios from "../components/Comentarios.jsx";
+---
+
+<Layout title="Foro - Raíz Verde">
+    <Header />
+
+    <h1 class="text-3xl font-bold text-green-800 mb-6 mt-8 text-center">Foro de Comentarios</h1>
+
+    <Comentarios client:load page="/foro" />
+</Layout>

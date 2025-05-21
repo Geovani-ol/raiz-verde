@@ -30,6 +30,10 @@ const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 
         <!-- Menú escritorio -->
         <nav class="hidden lg:flex items-center space-x-8">
+            <a href="/foro"
+                class={`text-white font-bold hover:underline transition ${isActive('/foro') ? 'underline underline-offset-4' : ''}`}>
+                Foro
+            </a>
             <a href="/comprar"
                 class={`text-white font-bold hover:underline transition ${isActive('/comprar') ? 'underline underline-offset-4' : ''}`}>
                 Comprar
@@ -40,8 +44,8 @@ const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
             </a>
             <a href="/curso"
                 class={`font-semibold py-2 px-5 rounded transition ${isActive('/curso') 
-                ? 'bg-green-700 text-white' 
-                : 'bg-green-50 text-green-900 hover:bg-green-100'}`}>
+                ? 'bg-[#336633] text-white' 
+                : 'bg-green-50 text-green-900 hover:scale-105'}`}>
                 Iniciar Curso
             </a>
         </nav>
@@ -49,6 +53,10 @@ const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 
     <!-- Menú móvil -->
     <nav id="mobile-menu" class="hidden lg:hidden mt-4 space-y-2 bg-green-800 p-4 rounded">
+        <a href="/foro"
+        class={`block text-white font-bold hover:underline ${isActive('/comprar') ? 'underline' : ''}`}>
+            Foro
+        </a>
         <a href="/comprar"
         class={`block text-white font-bold hover:underline ${isActive('/comprar') ? 'underline' : ''}`}>
             Comprar
