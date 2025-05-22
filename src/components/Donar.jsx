@@ -59,7 +59,7 @@ export default function Donar() {
     <div className="max-w-6xl mx-auto p-6 -my-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Lado izquierdo: Información */}
-        <section className="bg-white p-8 rounded-lg shadow-md flex flex-col justify-center">
+        <section className="bg-white border border-gray-300 p-8 rounded-lg shadow-xl flex flex-col justify-center">
           <h1 className="text-4xl font-extrabold text-green-800 mb-6">
             Apoya Raíz Verde: Cultiva tu Hogar, Cultiva tu Vida
           </h1>
@@ -80,7 +80,7 @@ export default function Donar() {
         </section>
 
         {/* Lado derecho: Donación */}
-        <section className="bg-white p-8 rounded-lg shadow-md flex flex-col">
+        <section className="bg-white border border-gray-300 p-8 rounded-lg shadow-xl flex flex-col">
           <div className="mb-6 text-center">
             <Heart size={48} className="inline-block text-[#047e58] animate-pulse" />
             <h3 className="text-3xl font-bold text-green-800 mt-4">
