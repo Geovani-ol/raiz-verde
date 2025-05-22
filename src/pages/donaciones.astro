@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Donar from '../components/Donar.jsx';
+---
+
+<Layout title="Donaciones - Raíz Verde">
+    <Header />
+
+    <Donar client:load />
+</Layout>

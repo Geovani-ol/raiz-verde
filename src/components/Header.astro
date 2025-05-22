@@ -30,6 +30,10 @@ const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 
         <!-- Menú escritorio -->
         <nav class="hidden lg:flex items-center space-x-8">
+            <a href="/donaciones"
+                class={`text-white font-bold hover:underline transition ${isActive('/donaciones') ? 'underline underline-offset-4' : ''}`}>
+                Donaciones
+            </a>
             <a href="/foro"
                 class={`text-white font-bold hover:underline transition ${isActive('/foro') ? 'underline underline-offset-4' : ''}`}>
                 Foro
@@ -53,8 +57,12 @@ const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 
     <!-- Menú móvil -->
     <nav id="mobile-menu" class="hidden lg:hidden mt-4 space-y-2 bg-green-800 p-4 rounded">
+        <a href="/donaciones"
+        class={`block text-white font-bold hover:underline ${isActive('/donaciones') ? 'underline' : ''}`}>
+            Foro
+        </a>
         <a href="/foro"
-        class={`block text-white font-bold hover:underline ${isActive('/comprar') ? 'underline' : ''}`}>
+        class={`block text-white font-bold hover:underline ${isActive('/foro') ? 'underline' : ''}`}>
             Foro
         </a>
         <a href="/comprar"
