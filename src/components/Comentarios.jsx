@@ -104,18 +104,18 @@ export default function Comentarios({ page }) {
         <div key={comment.id} className={`relative ${isRoot ? 'mb-6' : 'mb-6'}`}>
           <div
             className={`relative rounded-lg shadow-md p-4 bg-white border border-gray-200 ${
-              isRoot ? 'max-w-3xl mx-auto' : 'ml-6 md:ml-14 max-w-3xl'
-            }`}
+              isRoot ? 'mx-auto' : 'ml-6 md:ml-14'
+            } max-w-full`}
           >
-            <div className="flex justify-between items-center mb-1">
-              <span className="font-semibold text-gray-800 text-base">
+            <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
+              <span className="font-semibold text-gray-800 text-sm xs:text-base">
                 {comment.username}
               </span>
-              <small className="text-sm text-gray-500">
+              <small className="text-xs xs:text-sm text-gray-500">
                 {new Date(comment.created_at).toLocaleString()}
               </small>
             </div>
-            <p className="text-gray-800 whitespace-pre-wrap text-base leading-relaxed">
+            <p className="text-gray-800 whitespace-pre-wrap text-sm leading-relaxed">
               {comment.content}
             </p>
 
@@ -139,9 +139,8 @@ export default function Comentarios({ page }) {
 
           {replyTo === comment.id && (
             <div className="mt-4 w-full">
-              <div className="bg-white rounded-lg shadow-md p-4 w-full max-w-[100%] border border-gray-200">
-                <div className="flex flex-row justify-between gap-4 items-start">
-                  {/* Inputs a la izquierda */}
+              <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200 w-full">
+                <div className="flex flex-col xs:flex-row justify-between items-stretch xs:items-start gap-4">
                   <div className="flex flex-col w-full">
                     <input
                       type="text"
@@ -159,17 +158,16 @@ export default function Comentarios({ page }) {
                     />
                   </div>
 
-                  {/* Botones a la derecha, uno encima del otro */}
-                  <div className="flex flex-col gap-2.5">
+                  <div className="flex xs:flex-col gap-2 w-full xs:w-auto">
                     <button
                       onClick={addReply}
-                      className="bg-[#047e58] text-white text-sm px-4 py-2 rounded hover:bg-[#065f46] transition-all hover:scale-105"
+                      className="bg-[#047e58] w-full xs:w-auto text-white text-sm px-4 py-2 rounded hover:bg-[#065f46] transition-all hover:scale-105"
                     >
                       Enviar
                     </button>
                     <button
                       onClick={() => setReplyTo(null)}
-                      className="bg-[#dc2626] text-white px-4 py-2 text-sm rounded hover:bg-[#7f1d1d] transition-all hover:scale-105"
+                      className="bg-[#dc2626] w-full xs:w-auto text-white px-4 py-2 text-sm rounded hover:bg-[#7f1d1d] transition-all hover:scale-105"
                     >
                       Cancelar
                     </button>
@@ -179,8 +177,7 @@ export default function Comentarios({ page }) {
             </div>
           )}
 
-
-          <div className="mt-5 sm:ml-12 md:ml-8 lg:ml-2">{renderComments(comment.id)}</div>
+          <div className="mt-5 xs:ml-12 md:ml-8 lg:ml-2">{renderComments(comment.id)}</div>
         </div>
       );
     });
@@ -195,10 +192,7 @@ export default function Comentarios({ page }) {
 
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center">
-        {/* Fondo oscuro con opacidad */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
-
-        {/* Contenido del modal (sin opacidad) */}
         <div className="relative z-10 bg-white rounded-2xl shadow-lg p-6 max-w-sm w-full text-center">
           {icons[type]}
           <p className="text-gray-800 mb-4 text-base">{message}</p>
@@ -213,13 +207,11 @@ export default function Comentarios({ page }) {
     );
   }
 
-
-
   return (
     <div className="min-h-screen w-full px-4 py-6 flex justify-center">
       <div className="w-full max-w-3xl">
         <div className="mb-8 rounded-lg bg-white p-4 shadow-md border border-gray-200">
-          <div className="flex justify-between gap-4">
+          <div className="flex flex-col xs:flex-row justify-between gap-4">
             <div className="flex flex-col w-full">
               <input
                 type="text"
@@ -236,10 +228,10 @@ export default function Comentarios({ page }) {
                 onChange={(e) => setContent(e.target.value)}
               />
             </div>
-            <div className="">
+            <div className="flex xs:items-start">
               <button
                 onClick={addComment}
-                className="bg-[#047e58] text-white px-6 py-2 rounded hover:bg-[#065f46] hover:scale-105 transition"
+                className="bg-[#047e58] text-white px-6 py-2 w-full xs:w-auto rounded hover:bg-[#065f46] hover:scale-105 transition"
               >
                 Enviar
               </button>
