@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
-import { CornerUpLeft, AlertTriangle, XCircle, CheckCircle } from 'lucide-react';
+import { CornerUpLeft, CornerDownRight, AlertTriangle, XCircle, CheckCircle } from 'lucide-react';
+
 
 export default function Comentarios({ page }) {
   const [comments, setComments] = useState([]);
@@ -93,52 +94,67 @@ export default function Comentarios({ page }) {
 
   function renderComments(parentId = null) {
     const filtered = comments.filter((c) => c.parent_id === parentId);
-    const sortedComments = [...filtered].sort(
-      (a, b) => new Date(b.created_at) - new Date(a.created_at)
+    
+    const sortedComments = [...filtered].sort((a, b) =>
+      parentId === null
+        ? new Date(b.created_at) - new Date(a.created_at) // comentarios principales: nuevos arriba
+        : new Date(a.created_at) - new Date(b.created_at) // respuestas: viejos arriba
     );
 
     return sortedComments.map((comment) => {
       const isRoot = parentId === null;
 
+      const parentComment =
+        !isRoot && comment.parent_id
+          ? comments.find((c) => c.id === comment.parent_id)
+          : null;
+
       return (
         <div key={comment.id} className={`relative ${isRoot ? 'mb-6' : 'mb-6'}`}>
           <div
             className={`relative rounded-lg shadow-md p-4 bg-white border border-gray-200 ${
-              isRoot ? 'mx-auto' : 'ml-6 md:ml-14'
+              comment.parent_id ? 'ml-6 md:ml-14' : 'mx-auto'
             } max-w-full`}
           >
-            <div className="flex justify-between items-center mb-1 flex-wrap gap-2">
-              <span className="font-semibold text-gray-800 text-sm xs:text-base">
+            <div className="flex justify-between items-center flex-wrap mb-2">
+              <span className="text-sm font-semibold text-gray-800 flex items-center gap-2">
                 {comment.username}
+                {!isRoot && parentComment && (
+                  <>
+                    <CornerDownRight size={14} className="text-gray-500" />
+                    <span className="text-gray-500
+                    ">{parentComment.username}</span>
+                  </>
+                )}
               </span>
-              <small className="text-xs xs:text-sm text-gray-500">
+              <small className="text-xs text-gray-500">
                 {new Date(comment.created_at).toLocaleString()}
               </small>
             </div>
+
             <p className="text-gray-800 whitespace-pre-wrap text-sm leading-relaxed">
               {comment.content}
             </p>
 
-            {isRoot && (
-              <button
-                onClick={() => {
-                  setReplyTo(comment.id);
-                  setReplyContent('');
-                  setReplyUsername('');
-                }}
-                className="mt-2 flex items-center gap-1 text-green-700 hover:underline text-sm font-medium"
-              >
-                <CornerUpLeft size={16} /> Responder
-              </button>
-            )}
+            <button
+              onClick={() => {
+                setReplyTo(comment.id);
+                setReplyContent('');
+                setReplyUsername('');
+              }}
+              className="mt-2 flex items-center gap-1 text-green-700 hover:underline text-sm font-medium"
+            >
+              <CornerUpLeft size={16} /> Responder
+            </button>
           </div>
 
-          {!isRoot && (
+          {!isRoot && comments.find(c => c.id === comment.parent_id)?.parent_id === null && (
             <div className="absolute h-full left-3 md:left-8 top-0 border-l-2 border-green-900"></div>
           )}
 
+
           {replyTo === comment.id && (
-            <div className="mt-4 w-full">
+            <div className={`mt-4 w-full ${comment.parent_id ? 'ml-6 md:ml-14' : ''}`}>
               <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200 w-full">
                 <div className="flex flex-col xs:flex-row justify-between items-stretch xs:items-start gap-4">
                   <div className="flex flex-col w-full">
@@ -177,7 +193,7 @@ export default function Comentarios({ page }) {
             </div>
           )}
 
-          <div className="mt-5 xs:ml-12 md:ml-8 lg:ml-2">{renderComments(comment.id)}</div>
+          <div className="mt-5 md:ml-8 lg:ml-2">{renderComments(comment.id)}</div>
         </div>
       );
     });
