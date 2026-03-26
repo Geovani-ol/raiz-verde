@@ -2,6 +2,8 @@
 
 Plataforma educativa que enseña a construir invernaderos caseros y cultivar alimentos de manera orgánica, sostenible y accesible. Incluye cursos prácticos, guías por cultivo, directorio de compras, foro comunitario y sistema de donaciones.
 
+![raiz-verde](public/Screenshot_20260325_222218.png)
+
 ## 🚀 Demo
 
 - Sitio principal: [raiz-verde.vercel.app](https://raiz-verde.vercel.app)
